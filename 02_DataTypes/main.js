@@ -18,8 +18,9 @@ let flag = true
     6- Symbol       -> Unique.
 
 -> Non-Primitive DataTypes:
-    1- Array
+    1- Arrays
     2- Objects
+    3- Functions
 */
 
 console.table([typeof age, typeof firstName, typeof flag, typeof null, 
