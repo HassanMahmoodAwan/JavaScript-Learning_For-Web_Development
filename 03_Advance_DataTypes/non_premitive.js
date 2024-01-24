@@ -13,3 +13,5 @@ let sayHello = function() {
     console.log("Hello World!")
 }
 sayHello()
+
+console.log(typeof sayHello)  // function Object.
