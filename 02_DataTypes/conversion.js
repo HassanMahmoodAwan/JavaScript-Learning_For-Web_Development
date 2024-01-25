@@ -3,7 +3,7 @@ let score = "23 hello"
 let firstName = "John"
 let flag = true
 let one;
-let salary = null
+let salary = null  //-> 0
 
 console.log(Number(score), typeof Number(score), Number(firstName), 
 typeof Number(firstName)) 
