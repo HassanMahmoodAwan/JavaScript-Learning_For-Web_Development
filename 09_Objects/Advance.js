@@ -35,6 +35,24 @@ console.log(users_API_data[1]["userName"]);
 
 
 // Methods
-console.log(Object.keys(linkedinUsers))   // Returns Array
-console.log(Object.values(linkedinUsers))
-console.log(Object.entries(linkedinUsers))  // Nested Array
+console.log(Object.keys(linkedinUser))     // Returns Array
+console.log(Object.values(linkedinUser))
+console.log(Object.entries(linkedinUser))  // Nested Array
+
+console.log(linkedinUser.hasOwnProperty("name")) 
+
+
+// OBJECT De-Structuring: -> linkedinUser
+console.log(linkedinUser.email)
+
+const {email: e} = linkedinUser
+console.log(e)
+
+
+// const navbar  = ({company})=>{
+//     console.log(`${company}`)
+// }
+// navbar(company = "DeepMind Algo")
+
+
+// API website : RandomUser.me
