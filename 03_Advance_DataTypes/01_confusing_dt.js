@@ -13,7 +13,10 @@ console.log(+" ")
 
 // Variables
 let num1, num2, num3
-num1 = num2 = num3 = 10 + "3"
+num1 = num2 = num3 = 10 + "3"       // Deep copy.
+
+num1 = 10
+console.log(num1, num3)
 
 
 // MDN -> Pre-Increment && Post-Increment;
