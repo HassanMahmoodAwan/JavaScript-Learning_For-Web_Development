@@ -5,15 +5,15 @@ console.log(newDate, typeof newDate)
 console.log(newDate.toString())
 console.log(newDate.toLocaleString())
 console.log(new Date(2024, 0, 26, 7, 2).toLocaleString())
-console.log(new Date('01-26-2024').get)
+console.log(new Date('01-26-2024').getTime())
 console.log(newDate.toDateString())
-console.log(new Date.now())
+console.log(Date.now())                // MiliSeconds
 
 
 // Compare both values:
 console.log(Date.now())              // Milliseconds.
 console.log(newDate.getTime())
-console.log(Math.floor(newDate.getTime() * 1000))
+console.log(Math.floor(newDate.getTime() / 1000))
 
 
 

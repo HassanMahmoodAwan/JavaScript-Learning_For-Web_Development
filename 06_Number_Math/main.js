@@ -5,7 +5,7 @@ let hundreds = 100000000
 
 
 console.log(score, typeof score)
-console.log(otherNumber, typeof otherNumber)
+console.log(otherNumber, typeof otherNumber)    // Object.
 
 console.log(otherNumber.toString(), typeof otherNumber.toString())
 console.log(String(otherNumber), typeof String(otherNumber))

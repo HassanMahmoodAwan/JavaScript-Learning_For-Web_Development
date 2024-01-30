@@ -8,6 +8,10 @@ console.log(`First name: ${firstName.toUpperCase()}, Age: ${age}`)        // Bac
 const Company = new String("DeepMind Algos")
 console.log(Company, typeof Company)        // Object.   Run it on Browser Console.
 
+let newCompany = Company                   // Deep Copy.
+newCompany = new String("Youtube Channel")
+console.log(`${Company} and ${newCompany}`)
+
 
 // Strings Functions/Methods
 
@@ -18,7 +22,7 @@ console.log(Company.__proto__)
 
 
 
-console.log(Company.charAt(3))
+console.log(Company.charAt(3)) 
 console.log(Company.indexOf('A'))
 
 
