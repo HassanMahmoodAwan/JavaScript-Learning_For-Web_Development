@@ -32,3 +32,8 @@ const languages = [
 languages.forEach((items, index)=>{
     console.log(items["language"])
 })
+
+
+// Note: ForEach Loop doesn't Return Anything.
+const lang = languages.forEach((items, index)=>(index))
+console.log(lang)                              // Returns undefined.
