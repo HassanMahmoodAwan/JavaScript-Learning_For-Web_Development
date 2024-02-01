@@ -19,8 +19,8 @@ myMap.set("c", 1210)
 myMap.set("a", 15)
 console.log(myMap)
 
-for (const key of myMap) {
-    console.log(key)            // Returns Array of key, value.
+for (const keyValueArray of myMap) {
+    console.log(keyValueArray)            // Returns Array of key, value.
 }
 
 for (const [key, value] of myMap) {
@@ -45,12 +45,12 @@ for (const key in myLanguages) {
 }
 
 for (const index in myArray) {
-   console.log(index);
+    console.log(index);
 }
 
 for (const index in myStr) {
-   console.log(index);
+    console.log(index);
 }
 
 
-// Note: Map cannot iteratable using For-In.
+// Note: Map cannot iterable using For-In.
