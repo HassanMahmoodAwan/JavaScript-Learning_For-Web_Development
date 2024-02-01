@@ -2,7 +2,6 @@
 // Relational Operator ->  <, >, >=, <=, !=,!==
 // Logical Operator -> &&, ||, !
 
-
 // Note: Comparisons and Relational Operators behave differently.
 
 const balance = 1000

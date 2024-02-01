@@ -51,3 +51,10 @@ var third = function(){
     console.log("Hello world!")
 }
 third()
+
+
+var fourth
+fourth()
+fourth = function(){
+    console.log("Hello world!")
+}  // Check the Results.
