@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="color: #fff;">
+    <ul class="parent">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    document.body.style.backgroundColor = "#212121"
+
+    // Add Lists
+    function addList(langName){
+        const newList = document.createElement("li")
+        newList.textContent = langName
+        document.querySelector(".parent").appendChild(newList)
+    }
+    addList("TypeScript")
+    addList("Python")
+
+    const addOptimizedMethod = (langName)=>{
+        const newList = document.createElement("li")
+        newList.appendChild(document.createTextNode(langName))
+        document.querySelector(".parent").appendChild(newList)
+    }
+    addOptimizedMethod("RUST")
+
+
+   // EDIT
+    const secondChild = document.querySelector("li:nth-Child(2)")
+    const newVal = document.createElement("li")
+    newVal.textContent = "TypeScript with React"
+    secondChild.replaceWith(newVal)
+
+
+</script>
+</html>
