@@ -1,11 +1,52 @@
+<!-- 
+    window.document
+    document.getElementById("h1-tag")
+    const title = document.getElementById("h1-tag")
+    document.getElementById("h1-tag").id
+    document.getElementById("h1-tag").className
+    document.getElementById("h1-tag").getAttribute("id")
+    document.getElementById("h1-tag").getAttribute("class")
+    document.getElementById("h1-tag").setAttribute("class", "heading")
+
+    title.style.padding = 12px
+
+
+    title.textContent  ==> all content even hidden.
+    title.inner-text  ==> No hidden content show.
+    title.innerHTML ==> all inner tags.
+
+======= Query Selector
+1- querySelector ==> one First tag element.
+
+    document.querySelector("h2")
+    document.querySelector("#title")
+    document.querySelector(".className")
+
+2- querySelectorAll() ==> all tags. return NodeList.
+
+To Convert HTMLCollection or nodeList to Array: use
+Array.from(collectionVariable)
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dom Manipulation</title>
+
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
+    <h1 id="h1-tag" class="heading">Hello World to JS Mastery</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
     
 </body>
 </html>
