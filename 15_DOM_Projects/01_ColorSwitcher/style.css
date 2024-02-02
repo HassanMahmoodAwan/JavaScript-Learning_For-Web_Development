@@ -51,12 +51,13 @@
 #colorBoxes{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0;
 }
 .box{
     height: 100px;
     width: 100px;
-    margin: 0 14px;
+    margin: 5px 14px;
     border: 1px solid black;
 }
