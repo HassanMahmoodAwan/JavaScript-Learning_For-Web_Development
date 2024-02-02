@@ -3,6 +3,9 @@
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+a{
+    text-decoration: none;
+}
 
 #Navbar{
     height: 50px;
@@ -16,14 +19,14 @@
 #GitHub_Button{
     padding: 3px 10px;
     margin-right: 3px;
-    
+    cursor: pointer;
     
 }
 
 #Linkedin_Button{
     padding: 3px 10px;
     margin-left: 3px;
-    
+    cursor: pointer;
 }
 
 #mainArea{
@@ -60,4 +63,5 @@
     width: 100px;
     margin: 5px 14px;
     border: 1px solid black;
+    cursor: pointer;
 }
