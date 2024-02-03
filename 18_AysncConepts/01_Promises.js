@@ -1,4 +1,5 @@
 /* 
+==> Do aysnc Task
 ==> To Avoid CallBack Hell.
 ==> Take callback (Resolve) and (Reject).
 ==> .catch(), .then(), .finally()
@@ -53,3 +54,21 @@ new Promise( (resolve, reject)=>{
 
 
 // Same work using Aysnc-Await
+const promiseThree = new Promise( (resolve, reject)=>{
+    const error = true
+    if (!error){
+        resolve({userName: "Ali", career: "Software Engineer"})
+    }else{
+        reject("error Occured")
+    }
+})
+
+async function consumeThree(promiseThree){
+    try{
+        const response = await promiseThree
+        console.log(response.userName)
+    }catch (error){
+        console.log(error)
+    }
+}
+consumeThree(promiseThree)
