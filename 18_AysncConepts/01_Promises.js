@@ -72,3 +72,28 @@ async function consumeThree(promiseThree){
     }
 }
 consumeThree(promiseThree)
+
+
+// ==== RealWorld Example using Fetch
+// const URL = "https://jsonplaceholder.typicode.com/users"
+const URL = "https://api.github.com/users/HassanMahmoodAwan"
+
+async function getAllUsers(){
+    try{
+        const response = await fetch(URL)
+        const data = await response.json()       // Processing take time.
+        console.log(data)
+    }
+    catch(error){
+        console.log(`Error: ${error}`);
+    }
+
+}
+getAllUsers()
+
+
+// Using Promises as fetch is a promise.
+fetch(URL)
+.then( (response) => (response.json()) )
+.then( (data) => (console.log(data)) )
+.catch( (error)=> (console.log(error)))
