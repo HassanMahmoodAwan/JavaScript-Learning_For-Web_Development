@@ -1,5 +1,5 @@
-// Comparison Operator ->  ==, ===
-// Relational Operator ->  <, >, >=, <=, !=,!==
+// Comparison Operator ->  ==, ===, !=, !==
+// Relational Operator ->  <, >, >=, <=
 // Logical Operator -> &&, ||, !
 
 // Note: Comparisons and Relational Operators behave differently.

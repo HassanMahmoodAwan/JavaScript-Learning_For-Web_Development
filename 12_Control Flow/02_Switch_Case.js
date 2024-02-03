@@ -2,7 +2,6 @@
 // Default is not Mandatory.
 
 const age = 23
-const programmer = true
 
 switch (age){
     case 15:
