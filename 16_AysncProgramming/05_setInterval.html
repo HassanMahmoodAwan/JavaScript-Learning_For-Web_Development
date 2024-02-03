@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut</title>
+</head>
+<body>
+    <h1 id="date">Live Date: </h1>
+    <button id="startBtn">start </button>
+    <button id="stopBtn">stop</button>
+    
+</body>
+<script>
+    
+    const dates = document.querySelector("#date")
+    const startBtn = document.querySelector("#startBtn")
+    const stopBtn = document.querySelector("#stopBtn")
+    
+    const date = new Date()
+
+    function data(name){
+        console.log(name)
+        dates.innerHTML = Date.now()
+    }
+    let Interval
+    startBtn.addEventListener('click', (event)=>{
+        if (!Interval){
+            Interval = setInterval( data, 1000, "Hassan")
+        }
+    })
+
+    stopBtn.addEventListener('click', (e)=>{
+        clearInterval(Interval)
+        Interval = null
+    })
+
+
+
+    
+    
+
+
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut</title>
+</head>
+<body>
+    <h1 id="heading">Learning JS with Chai aur Code</h1>
+    <button id="btn">stop</button>
+    
+</body>
+<script>
+    
+    const heading = document.querySelector("#heading")
+    const stopBtn = document.querySelector("#btn")
+    
+    stopBtn.addEventListener('click', (event)=>{
+        clearTimeout(timeOut)
+        console.log(`Stopped`)
+    }, false)
+    
+    const changeText = function(){
+        heading.innerHTML = "Learning JavaScript"
+    }
+    const timeOut = setTimeout(changeText, 3000) // pass Reference.
+
+    
+
+
+</script>
+</html>
