@@ -9,6 +9,8 @@ console.log(null == 0)
 console.log(undefined == NaN)
 console.log(undefined >= NaN)
 console.log(undefined >= 0)
+console.log(+undefined == NaN)    
+console.log(+undefined >= NaN)
 
 
 console.log("2" == 2)
@@ -19,7 +21,7 @@ const id = Symbol('123')
 const anotherId = Symbol('123')
 
 console.log(id === anotherId) // false.
-console.log(id == Symbol('123')) // true.
+console.log(id == Symbol('123')) // false.
 
 // ==== BigInt ====
 let bigNumber = 12232342353453453423423423423n
