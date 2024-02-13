@@ -1,8 +1,6 @@
 const userWebsite = "HassanAwan.ai"
 
-if (userWebsite){
-    console.log(userWebsite)
-}                               // It works
+if (userWebsite) console.log(userWebsite)       // It works
 
 // Falsy Values:
 // => 0, -0, NaN, undefined, null, "", false, bigInt 0n

@@ -1,4 +1,4 @@
-const marvelHeros = ["Thor", "Spider man"]
+const marvelHeros = ["Thar", "Spider man"]
 const dcHeros = ["Superman", "Batman"]
 
 marvelHeros.push(dcHeros)    // 2-D Array

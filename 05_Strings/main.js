@@ -2,7 +2,7 @@ let firstName = "Hassan"
 let age = 22
 
 console.log("First name: " + firstName + ", Age: " + age)
-console.log(`First name: ${firstName.toUpperCase()}, Age: ${age}`)        // Backticks Used.
+console.log(`First name: ${firstName.toUpperCase()}, Age: ${age}`)  //Backticks Used.
 
 // String Object.
 const Company = new String("DeepMind Algos")

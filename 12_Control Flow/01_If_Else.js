@@ -16,6 +16,7 @@ console.log(reward)         // Error as no Scope.
 
 // if statement short-hand.
 if (user) console.log("User is logged in.")
+else console.log("User not Logged In")
 
 if (balance >= 500) console.log("Balance is greater than 500."),
 console.log("user is not logged in.")   // Unreadable Code.
