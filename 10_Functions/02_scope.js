@@ -54,7 +54,7 @@ third()
 
 
 var fourth
-fourth()
+fourth()                            // Error.
 fourth = function(){
     console.log("Hello world!")
 }  // Check the Results.
