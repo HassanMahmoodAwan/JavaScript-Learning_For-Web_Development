@@ -40,3 +40,15 @@ console.log(UserOne);
 const userThree = new users("Ali", "456", false)
 const userFour = new users("Umer", "765", false)
 console.log(userThree);
+
+
+// ==== Constructor Function using Arrow Func (not allowed as this Conext:: {}) ====
+const allUsers = (userId, userName) => {
+    this.Id = userId
+    this.name = userName
+
+    this.display = ()=> console.log(this.name)
+}
+const regularUser = allUsers(21, 'Ali')
+// regularUser.display()                // Error
+// console.log(regularUser.userName)    // Error
