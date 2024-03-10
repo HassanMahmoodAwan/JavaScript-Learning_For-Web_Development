@@ -33,7 +33,7 @@ function users(username, password, isLoggedIn){
 }
 
 const UserOne = users("Hassan", "123", true)
-const UserTwo = users("Hamid", "321", true) //->overwrite constru context.
+const UserTwo = users("Hamid", "321", true) //->overwrite construtor context.
 console.log(UserOne);
 
 // Use new as create separate Instance for each Object.

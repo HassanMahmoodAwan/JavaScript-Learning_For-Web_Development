@@ -3,7 +3,7 @@
 - JS is prototype based Language.
 - OOP concepts are behind scene sugar Syntax
 
-- - Objects are collection of Properties and Methods
+> - Objects are collection of Properties and Methods
 
 ## OOP Concepts
 
