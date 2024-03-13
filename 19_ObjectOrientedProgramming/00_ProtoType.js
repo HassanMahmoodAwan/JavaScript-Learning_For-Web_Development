@@ -71,7 +71,7 @@ console.log(myArr.arrayLevelMsg);
 
 
 //  ========== ProtoType Inheritance =============
-const user = {
+const users = {
     name: "Hassan",
     score: 72,
 }
@@ -83,6 +83,6 @@ const student = {
     field: "BSCS",
     interest: "Web Development",
 
-    __proto__: user
+    __proto__: users
 }
 Object.setPrototypeOf(student, lisences)

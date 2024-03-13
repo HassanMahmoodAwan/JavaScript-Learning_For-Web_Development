@@ -1,14 +1,21 @@
-function one(username){
-    this.username = username
+/**
+        CALL: used to Call 1 construct func properties to Other.
+ */
+
+function Vehicle(){
+    this.category = "onRoad"
+    this.type = "City use"
 }
 
-function two(username, email){
-    one.call(this, username),
-    this.email = email,
+function Car(model){
+    Vehicle.call(this)
+    this.model = model
 
     this.display = function(){
-        console.log(`${this.username} ${this.email}`);
+        console.log(`${this.category} is ${this.model}`);
     }
 }
-const obj = new two("Hassan", "hsn@DeepMindAlgo.com")
-obj.display()
+
+const one = new Car("Honda", "Bike")
+console.log(one.category)
+one.display()

@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Older React Bind</title>
+    <title>Bind Properties in Method</title>
 </head>
 <body>
-    <button>Click Bind</button>
+    <button>Click me</button>
+    
 </body>
 <script>
     class React{
         constructor(){
-            this.version = "First --v",
-            this.server = "https://localhost:3000",
+            this.server = "https://localhost:3000/Home",
+            this.type = "Node --v"
 
             document
                 .querySelector('button')
-                .addEventListener('click', this.handleClick.bind(this))
+                .addEventListener('click', 
+                this.handleClick.bind(this))
         }
         handleClick(){
-            console.log("Button Click")
-            console.log(this)
+            console.log("Button Clicked")
             console.log(this.server)
         }
     }
-    const app = new React()
 </script>
 </html>

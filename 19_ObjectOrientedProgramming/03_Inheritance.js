@@ -12,6 +12,7 @@ class Parent{
     static privateDetails = ()=>{
         console.log("Not Accessable");
     }
+
 }
 
 class Child extends Parent{
@@ -23,9 +24,12 @@ class Child extends Parent{
 }
 
 // ======== OBJECTS =======
+const parent = new Parent("first", "second")
 const child = new Child('Hassan', 23, 29, 40)
 console.log(child.addSum())
-// console.log(child.privateDetails())      // Error -> Not Accessable
+// console.log(parent.privateDetails())   // Error
+// console.log(child.privateDetails())   // Error -> notAccessable
 
 
-console.log(child === Child)
+console.log(child === Child)                // False.
+console.log(child instanceof Child);        // True.
