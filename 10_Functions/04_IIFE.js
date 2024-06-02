@@ -11,7 +11,7 @@
 })("Ali");  
 
 
-// Don't take any global variables.
+// Don't take any global variables. Actually It take Global Variable.
 let myVar = "Ali"
 (()=> {
     console.log(myVar)                    //Error.

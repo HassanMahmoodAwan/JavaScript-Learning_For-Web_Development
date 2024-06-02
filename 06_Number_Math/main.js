@@ -27,5 +27,5 @@ console.log(Number.isFinite(otherNumber))
 
 
 // Check Number is Numeric or not
-console.log(isNaN("2121"))                      // False.
+console.log(isNaN("2121"))                      // False, Not Working.
 console.log(typeof 6793 === 'number')

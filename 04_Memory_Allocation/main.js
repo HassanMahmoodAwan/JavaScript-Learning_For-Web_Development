@@ -23,3 +23,7 @@ competitionId["name"] = "John Khan"
 
 console.log(student)
 console.log(competitionId)      // Same.
+
+// Student Not Change.
+competitionId = "Hello world"
+console.log(student)

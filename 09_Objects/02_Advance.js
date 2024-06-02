@@ -18,6 +18,7 @@ const two = {c:3, d:4}
 
 console.log({one, two})      // Nested Objects.
 
+
 const third = Object.assign({}, one, two)
 console.log(third)
 
@@ -45,8 +46,8 @@ console.log(linkedinUser.hasOwnProperty("name"))
 // OBJECT De-Structuring: -> linkedinUser
 console.log(linkedinUser.email)
 
-const {email: e} = linkedinUser
-console.log(e)
+const {email: e, name:n, age:ag} = linkedinUser
+console.log(e + "\n" + n)
 
 
 // const navbar  = ({company})=>{
