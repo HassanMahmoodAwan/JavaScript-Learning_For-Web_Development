@@ -1,4 +1,4 @@
-// if no use of Break, All cases run except Default.
+// if no use of Break, All cases run with Default as well.
 // Default is not Mandatory.
 
 const age = 23

@@ -17,6 +17,7 @@ console.log(this)                   // {} Empty as Node JS.
 // Note: for Browser, global context is Window. 
 
 
+
 const newUser = function(){
     let username = "Ali"
     console.log(this)                // Have lots of contexts.

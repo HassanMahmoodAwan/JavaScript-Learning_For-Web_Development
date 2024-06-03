@@ -24,11 +24,13 @@ function channel(){
     platform()                      // Func Call : Hoisting.
     function platform(){
         const website = "Youtube" 
+        global.id = 12              // Global variable like window.id = 12 in Client-Side.
         var type = "Technology" 
         console.log(`${name} and ${website}`)
     }
     // console.log(website)    // Error.
     // console.log(type)       // Error.
+    console.log(id)
 }
 channel()
 

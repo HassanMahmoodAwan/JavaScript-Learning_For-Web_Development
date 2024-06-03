@@ -22,3 +22,9 @@ const totalPrice = Courses.reduce(
 
 console.log(totalPrice)
 
+
+const cart = new Array(10, 20, 12.99, 4.01)
+const totalPrices = cart.reduce((acc, currVal)=>{
+    return acc + currVal
+}, taxes = 20)
+console.log(totalPrices);
