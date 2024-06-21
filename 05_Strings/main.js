@@ -23,6 +23,7 @@ console.log(Company.__proto__)
 
 
 console.log(Company.charAt(3)) 
+console.log(Company.charCodeAt(0))
 console.log(Company.indexOf('A'))
 
 
@@ -32,7 +33,7 @@ console.log("      Hello World!      ".trim())
 console.log(Company.substring(2, 5))
 console.log(Company.slice(-4, 3))
 
-console.log(Company.replace(" ", "-"))
+console.log(Company.replace("Deep", "-"))   // Not InPlace.
 
 
 console.log(Company.includes("DeepM"))
