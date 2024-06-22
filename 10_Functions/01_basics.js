@@ -19,7 +19,7 @@ console.log(`New Result: ${ourResult}`)
 
 // Rest Operator same as Spread Operator.
 const userCart = function (...prices){     //having unknown Nos parameters. 
-    return prices
+    return prices                          //Returns Array
 }
 userCart(10, 20, 30, 32)
 
