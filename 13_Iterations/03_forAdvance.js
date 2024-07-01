@@ -28,6 +28,12 @@ for (const [key, value] of myMap) {
 }
 
 
+// Key-Value pair of String   (Not work, index not Given as Ouput)
+let test = 'fetch.AI'
+for(let [value, index] of test){
+    console.log(value + " " + index)
+}
+
 // Note : Iterating Object using for-of ==> Error.
 
 
