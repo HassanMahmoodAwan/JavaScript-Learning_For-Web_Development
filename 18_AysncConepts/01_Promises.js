@@ -31,7 +31,7 @@ promiseTwo
 
 
 new Promise( (resolve, reject)=>{
-    const error = true
+    const error = false
     if (!error){
         resolve({username: "Hassan", career: "Javascript"})
     }else{
@@ -39,6 +39,7 @@ new Promise( (resolve, reject)=>{
     }
 })
 .then((user)=>{
+    console.log(user)
     return user.username
 })
 .then( (userName)=>{
@@ -82,7 +83,7 @@ async function getAllUsers(){
     try{
         const response = await fetch(URL)
         const data = await response.json()       // Processing take time.
-        console.log(data)
+        console.log(data.login)
     }
     catch(error){
         console.log(`Error: ${error}`);
@@ -95,5 +96,5 @@ getAllUsers()
 // Using Promises as fetch is a promise.
 fetch(URL)
 .then( (response) => (response.json()) )
-.then( (data) => (console.log(data)) )
+.then( (data) => (console.log(data.id)) )
 .catch( (error)=> (console.log(error)))
